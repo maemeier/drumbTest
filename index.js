@@ -1,7 +1,11 @@
-//find first button and addEventListner to that button
+//traget class "drum"
+var numberOfDrum = document.querySelectorAll(".drum").length;
 
-document.querySelector("button").addEventListener("click", handleClick);
+for (var i = 0; i < numberOfDrum; i++)
+  //find first button and addEventListner to that button
+  // i is the button
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+    alert("i got clicked");
+  });
 
-function handleClick() {
-  //alert("I got click");
-}
+//when button detected
