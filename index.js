@@ -5,7 +5,10 @@ for (var i = 0; i < numberOfDrum; i++)
   //find first button and addEventListner to that button
   // i is the button
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
-    alert("i got clicked");
+    var audio = new Audio("sounds/tom-1.mp3");
+    audio.play();
   });
 
-//when button detected
+//play sound
+//var audio = new Audio("sounds/tom-1.mp3");
+//audio.play();
